@@ -1,0 +1,60 @@
+.hero__image {
+    height: 0;
+    padding-bottom: 56.25%;
+    position: relative;
+    overflow: hidden;
+    
+    img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.hero__slider {
+    position: relative;
+    
+    .hero__caption {
+        position: absolute;
+        bottom: 100px;
+        left: 0;
+        right: 0;
+    }
+}
+
+#hero {
+    .owl-dots {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 15px;
+        @media (min-width: $grid-break-points-md) {
+            right: calc((100% - #{$container-max-widths-md}) /2);
+        }
+        @media (min-width: $grid-break-points-sm) {
+            right: calc((100% - #{$container-max-widths-sm}) /2);
+        }
+        @media (min-width: $grid-break-points-lg) {
+            right: calc((100% - #{$container-max-widths-lg}) /2);
+        }
+        @media (min-width: $grid-break-points-xl) {
+            right: calc((100% - #{$container-max-widths-xl}) /2);
+        }  
+        button {
+            display: block;
+            span {
+                width: 10px;
+                height: 10px;
+                background-color: #fff;
+                display: inline-block;
+            }
+            &.active {
+                span {
+                    background-color: $maroon;
+                }
+            }
+        }
+    }
+}

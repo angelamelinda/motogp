@@ -1,0 +1,48 @@
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    transition: all .3s ease;
+
+    a {
+        color: $white;
+
+        &:hover {
+            color: $maroon;
+        }
+    }
+
+    #header__menu {
+        li {
+            padding-left: 30px;
+        }
+    }
+    .quick-menu {
+        > ul {
+            > li {
+                padding-left: 20px;
+
+                &.site-language {
+                    ul {
+                        display: none;
+                        max-height: 0;
+                        overflow: hidden;
+                    }
+                }
+            }
+            li {
+                a {
+                    font-size: $font-size-base * 0.8;
+                }
+            }
+        }
+    }
+}
+
+.scrolled {
+    header {
+        background-color: rgba(172, 14, 54, .5);
+    }
+}

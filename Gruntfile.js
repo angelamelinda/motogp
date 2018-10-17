@@ -44,15 +44,28 @@ module.exports = function(grunt) {
                     livereload: true
                 }
             }
+        },
+
+        postcss: {
+            options: {
+                map: true,
+                processors: [
+                    require('autoprefixer')
+                ]
+            },
+            dist: {
+                src: 'css/*.css'
+            }
         }
     })
 
     // Default task
     grunt.registerTask('default', ['watch']);
-    grunt.registerTask('css', ['sass', 'cssmin']);
+    grunt.registerTask('css', ['sass', 'cssmin', 'postcss:dist']);
     grunt.registerTask('js', ['uglify']);
 
     // Load up tasks
+    grunt.loadNpmTasks('grunt-postcss');
     grunt.loadNpmTasks('grunt-contrib-sass');
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-contrib-uglify');

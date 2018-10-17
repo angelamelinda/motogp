@@ -1,0 +1,68 @@
+/* 
+ * Body
+ */
+body {
+    font-family: $font-raleway;
+    font-size: $font-size-base;
+}
+
+/* 
+ * Anchor
+ */
+a {
+    text-decoration: none;
+    color: $maroon;
+    transition: all .3s ease;
+
+    &:hover {
+        color: $blue;
+    }
+}
+
+/*
+ * Spacing
+ */
+@for $i from 0 to 250 {
+    .pb-#{$i} {
+        padding-bottom: #{$i}px;
+    }
+    .pt-#{$i} {
+        padding-top: #{$i}px;
+    }
+    .pl-#{$i} {
+        padding-left: #{$i}px;
+    }
+    .pr-#{$i} {
+        padding-right: #{$i}px;
+    }
+    .mb-#{$i} {
+        margin-bottom: #{$i}px;
+    }
+    .mt-#{$i} {
+        margin-top: #{$i}px;
+    }
+    .ml-#{$i} {
+        margin-left: #{$i}px;
+    }
+    .mr-#{$i} {
+        margin-right: #{$i}px;
+    }
+}
+
+/* 
+ * Button
+ */
+.btn {
+    background-color: $maroon;
+    color: $white!important;
+    text-transform: uppercase;
+    padding: 15px 35px;
+    border-radius: .25rem;
+    display: inline-block;
+    font-weight: $font-weight-semi-bold;
+    box-shadow: 0px 0px 10px 2px rgba(0,0,0,.5);
+
+    &:hover {
+        box-shadow: 0px 0px 10px 2px rgba(0,0,0,.65);
+    }
+}

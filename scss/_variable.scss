@@ -1,0 +1,59 @@
+/*
+ * Color System
+ */
+
+ $white: #fff;
+ $blue: #74aae8;
+ $maroon: #ac0e36;
+ $light-grey: #ddd;
+ $dark-grey: #4a4a4a;
+
+/* 
+ * Grid Columns
+ */
+
+$grid-columns: 12;
+$grid-gutter-width: 30px;
+
+/* 
+ * Grid Breakpoints
+ */
+
+$grid-break-points-sm: 576px;
+$grid-break-points-md: 768px;
+$grid-break-points-lg: 992px;
+$grid-break-points-xl: 1200px;
+
+/* 
+ * Grid Containers
+ */
+
+$container-max-widths-sm: 540px;
+$container-max-widths-md: 720px;
+$container-max-widths-lg: 960px;
+$container-max-widths-xl: 1140px;
+
+/* 
+ * Fonts
+ */
+
+$font-roboto: 'Roboto', sans-serif;
+$font-raleway: 'Raleway', sans-serif;
+
+$font-size-base: 1rem;
+$h1-font-size: $font-size-base * 2.5;
+$h2-font-size: $font-size-base * 2;
+$h3-font-size: $font-size-base * 1.75;
+$h4-font-size: $font-size-base * 1.5;
+$h5-font-size: $font-size-base * 1.25;
+$h6-font-size: $font-size-base;
+
+$font-weight-thin: 100;
+$font-weight-extra-light: 200;
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-medium: 500;
+$font-weight-semi-bold: 600;
+$font-weight-bold: 700;
+$font-weight-extra-bold: 800;
+$font-weight-black: 900;

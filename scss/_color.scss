@@ -1,0 +1,22 @@
+/*
+ * Color
+ */
+ $white: #fff;
+ $blue: #74aae8;
+ $maroon: #ac0e36;
+ $light-grey: #ddd;
+ $dark-grey: #4a4a4a;
+
+@each $name, $hex in ("white": $white, "blue": $blue, "maroon": $maroon, "light-grey": $light-grey, "dark-grey": $dark-grey) {
+    .color-#{$name}, .color-#{$name}-hover:hover {
+        color: $hex;
+    }
+
+    .background-#{$name}, .background-#{$name}-hover:hover {
+        background-color: $hex;
+    }
+    
+    .border-color-#{$name}, .border-color-#{$name}-hover:hover {
+        border-color: $hex;
+    }
+}

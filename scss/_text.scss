@@ -1,0 +1,56 @@
+/*
+ * Text Position
+ */
+
+@each $position in left, center, right, justify {
+    .text-#{$position} {
+        text-align: $position;
+    }
+}
+
+/*
+ * Text Transform
+ */
+
+ @each $type in uppercase, capitalize, lowercase {
+    .text-#{$type} {
+        text-transform: $type;
+    }
+}
+
+/*
+ * Font Weight
+ */
+@each $weight, $variable in ("thin": $font-weight-thin, "extra-light": $font-weight-extra-light, 
+                            "light": $font-weight-light, "normal": $font-weight-normal, 
+                            "semi-bold": $font-weight-semi-bold, "bold": $font-weight-bold,
+                            "extra-bold": $font-weight-extra-bold, "black": $font-weight-black) {
+    .font-weight-#{$weight} {
+        font-weight: $variable;
+    }
+}
+
+h1 {
+    font-size: $h1-font-size;
+}
+
+h2 {
+    font-size: $h2-font-size;
+}
+
+h3 {
+    font-size: $h3-font-size;
+}
+
+h4 {
+    font-size: $h4-font-size;
+}
+
+h5 {
+    font-size: $h5-font-size;
+}
+
+h6 {
+    font-size: $h6-font-size;
+}
+
